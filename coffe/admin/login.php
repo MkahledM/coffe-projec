@@ -1,6 +1,8 @@
 
 <?php include('../config/constants.php'); ?>
 
+
+
 <html>
     <head>
         <title>login</title>
@@ -54,26 +56,26 @@
 
 <?php
 
-if(isset($_post['submit'])){
+// if(isset($_post['submit'])){
 
 
 
-    $username = $_post['username'];
-   $password = md5($_post['password']);
-   $sql = "SELECT * FROM tbl_admin WHERE username='$username' AND password='password'";
-   $res= mysqli_query($conn,$sql);
-   $count = mysqli_num_rows($res);
+//     $username = $_post['username'];
+//    $password = md5($_post['password']);
+//    $sql = "SELECT * FROM tbl_admin WHERE username='$username' AND password='$password'";
+//    $res= mysqli_query($conn,$sql);
+//    $count = mysqli_num_rows($res);
 
-if($count==1){
+// if($count==1){
 
-$_SESSION['login'] = "<div class='success text-center'>login successful</div>";
-$_SESSION['user'] = $username; //check user logged in or not and logout unset it
-header('location:'.SITEURL.'admin/');
-}
-else{
-    $_SESSION['login'] = "<div class='error text-center'> username and password not match </div>";
-    header('location:'.SITEURL.'admin/login.php');
-}
+// $_SESSION['login'] = "<div class='success text-center'>login successful</div>";
+// $_SESSION['user'] = $username; //check user logged in or not and logout unset it
+// header('location:'.SITEURL.'admin/');
+// }
+// else{
+//     $_SESSION['login'] = "<div class='error text-center'> username and password not match </div>";
+//     header('location:'.SITEURL.'admin/login.php');
+// }
   
-}
+// }
 ?>
