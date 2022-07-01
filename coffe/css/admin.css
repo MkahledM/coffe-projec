@@ -111,3 +111,9 @@ table tr td{
     background-color: #ff4757;
     color: #fff;
 }
+.login{
+    width:20% ;
+    border: 1px solid gray;
+    margin: 5% auto ;
+    padding: 2%;
+}
