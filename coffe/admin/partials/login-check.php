@@ -1,3 +1,4 @@
+
 <?php 
 // check the user logged in or not 
 if(!isset($_SESSION['user'])) //if session of user not set 
