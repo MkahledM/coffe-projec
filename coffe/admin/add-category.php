@@ -99,6 +99,7 @@
         if(isset($_FILES['image']['name'])){
             //upload image
             $image_name = $_FILES['image']['name'];
+            if($image_name !=""){
 
             //auto rename and get extention for image
             $ext = end(explode('.',$image_name));
@@ -117,6 +118,7 @@
                 die();
 
             }
+          }
 
         }
         else{
