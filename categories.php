@@ -1,6 +1,7 @@
 
 
-<?php //include('admin/partials/register_check.php');?>
+<?php include('config/constants.php');?>
+<?php include('admin/partials/register_check.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +21,14 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="../images/logo-coffe.png" alt="Restaurant Logo" class="img-responsive">
+                    <img src="images/logo-coffe.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
 
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="homepage.php">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
                         <a href="categories.php">Categories</a>
@@ -40,6 +41,12 @@
                     </li>
                     <li>
                         <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../admin/logout.php">logout</a>
+                    </li>
+                    <li>
+                        <a>welcom <?php echo $_SESSION['user2'];?> </a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +65,7 @@
 
             <a href="category-drinks.html">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png"  class="img-responsive img-curve">
+                <img src="images/menu-2.png"  class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -66,7 +73,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png"  class="img-responsive img-curve">
+                <img src="images/menu-2.png"  class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -82,7 +89,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png" class="img-responsive img-curve">
+                <img src="images/menu-2.png" class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -90,7 +97,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png"  class="img-responsive img-curve">
+                <img src="images/menu-2.png"  class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -98,7 +105,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png"  class="img-responsive img-curve">
+                <img src="images/menu-2.png"  class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -113,7 +120,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png" alt="Burger" class="img-responsive img-curve">
+                <img src="images/menu-2.png" alt="Burger" class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -121,7 +128,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png"  class="img-responsive img-curve">
+                <img src="images/menu-2.png"  class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -129,7 +136,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png" class="img-responsive img-curve">
+                <img src="images/menu-2.png" class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -137,7 +144,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png"  class="img-responsive img-curve">
+                <img src="images/menu-2.png"  class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>
@@ -145,7 +152,7 @@
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="../images/menu-2.png" class="img-responsive img-curve">
+                <img src="images/menu-2.png" class="img-responsive img-curve">
 
                 <h3 class="float-text text-white">coffe</h3>
             </div>

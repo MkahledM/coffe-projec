@@ -1,6 +1,6 @@
 
-<?php include('../config/constants.php');?>
-<?php  include('../admin/partials/login-check.php');?>
+<?php include('config/constants.php');?>
+<?php  include('admin/partials/login-check.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,7 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="homepage.php">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
                         <a href="categories.php">Categories</a>
@@ -39,6 +39,13 @@
                     </li>
                     <li>
                         <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../admin/logout.php">logout</a>
+                    </li>
+                    
+                    <li>
+                        <a>welcom <?php echo $_SESSION['user2'];?> </a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +66,7 @@
                     <legend>Selected Food</legend>
 
                     <div class="food-menu-img">
-                        <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                        <img src="images/menu-2.png" class="img-responsive img-curve">
                     </div>
     
                     <div class="food-menu-desc">
@@ -76,16 +83,16 @@
                 <fieldset>
                     <legend>Delivery Details</legend>
                     <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. Vijay Thapa" class="input-responsive" required>
+                    <input type="text" name="full-name" class="input-responsive" required>
 
                     <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+                    <input type="tel" name="contact"  class="input-responsive" required>
 
                     <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="E.g. hi@vijaythapa.com" class="input-responsive" required>
+                    <input type="email" name="email"  class="input-responsive" required>
 
                     <div class="order-label">Address</div>
-                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+                    <textarea name="address" rows="10"  class="input-responsive" required></textarea>
 
                     <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
                 </fieldset>

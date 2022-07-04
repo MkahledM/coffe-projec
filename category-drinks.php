@@ -1,6 +1,7 @@
 
 
-<?php //include('admin/partials/register_check.php');?>
+<?php include('config/constants.php');?>
+<?php include('admin/partials/register_check.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="homepage.php">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
                         <a href="categories.php">Categories</a>
@@ -39,6 +40,12 @@
                     </li>
                     <li>
                         <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../admin/logout.php">logout</a>
+                    </li>
+                    <li>
+                        <a>welcom <?php echo $_SESSION['user2'];?> </a>
                     </li>
                 </ul>
             </div>

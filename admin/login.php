@@ -100,7 +100,7 @@ elseif ($count==false) {
  
 //  $_SESSION['login_user'] = "<div class='success text-center'>login successful </div>";
 //   $_SESSION['users'] = $username2;//check user logged in or not and logout unset it
- header('location:http://localhost/coffe/user/homepage.php');
+ header('location:http://localhost/index.php');
 }
 //  else{
 //     echo"hhhhhhhhhhhhh";
