@@ -12,7 +12,7 @@
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
+<?php //////////////////////////////////////////////////////////////?>
 <body>
     <!-- Navbar Section Starts Here -->
     <section class="navbar">

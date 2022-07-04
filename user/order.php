@@ -22,7 +22,6 @@
                     <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
-
             <div class="menu text-right">
                 <ul>
                     <li>
