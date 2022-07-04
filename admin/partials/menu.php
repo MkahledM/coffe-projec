@@ -1,6 +1,5 @@
-<?php include ('../config/constants.php');
-include('login-check.php');
-?>
+<?php include ('../config/constants.php');?>
+<?php include('login-check.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +22,9 @@ include('login-check.php');
                 <li><a href="manage-drink.php">Drinks</a></li>
                 <li><a href="manage-order.php">Order</a></li>
                 <li><a href="logout.php">Logout</a></li>
+                <li><a href="users.php">users</a></li>
+                <li><a><?php echo $_SESSION['user'];?></a></li>
+
 
             </ul>
         </div>

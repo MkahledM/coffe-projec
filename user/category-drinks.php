@@ -1,3 +1,6 @@
+
+
+<?php //include('admin/partials/register_check.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <title>Restaurant Website</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -23,13 +26,16 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="homepage.php">Home</a>
                     </li>
                     <li>
-                        <a href="categories.html">Categories</a>
+                        <a href="categories.php">Categories</a>
                     </li>
                     <li>
-                        <a href="Drinks.html">Drinks</a>
+                        <a href="Drinks.php">Drinks</a>
+                    </li>
+                    <li>
+                        <a href="order.php">orders</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -46,10 +52,7 @@
     <section class="food-search text-center">
         <div class="container">
             
-            <form action="food-search.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
-            </form>
+            <h2>Foods on <a href="#" class="text-white">"Category"</a></h2>
 
         </div>
     </section>

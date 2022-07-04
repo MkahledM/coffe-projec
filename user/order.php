@@ -1,3 +1,6 @@
+
+<?php include('../config/constants.php');?>
+<?php  include('../admin/partials/login-check.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <title>Restaurant Website</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -23,13 +26,17 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="homepage.php">Home</a>
                     </li>
                     <li>
-                        <a href="categories.html">Categories</a>
+                        <a href="categories.php">Categories</a>
                     </li>
                     <li>
-                        <a href="Drinks.html">Drinks</a>
+                        <a href="Drinks.php">Drinks</a>
+
+                    </li>
+                    <li>
+                        <a href="order.php">orders</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>

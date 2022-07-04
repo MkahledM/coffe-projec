@@ -1,3 +1,7 @@
+
+
+<?php //include('admin/partials/register_check.php');?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
     <title>Restaurant Website</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -16,20 +20,23 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                    <img src="../images/logo-coffe.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
 
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="homepage.php">Home</a>
                     </li>
                     <li>
-                        <a href="categories.html">Categories</a>
+                        <a href="categories.php">Categories</a>
                     </li>
                     <li>
-                        <a href="Drinks.html">Drinks</a>
+                        <a href="Drinks.php">Drinks</a>
+                    </li>
+                    <li>
+                        <a href="order.php">orders</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -47,100 +54,100 @@
     <!-- CAtegories Section Starts Here -->
     <section class="categories">
         <div class="container">
-            <h2 class="text-center">Explore Foods</h2>
+            <h2 class="text-center">Explore coffe</h2>
 
             <a href="category-drinks.html">
             <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+                <img src="../images/menu-2.png"  class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Pizza</h3>
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+                <img src="../images/menu-2.png"  class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Burger</h3>
+                <h3 class="float-text text-white">coffe</h3>
+            </div>
+            </a>
+
+            <!-- <a href="#">
+            <div class="box-3 float-container">
+                <img src="../images/menu-2.png" lass="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Coffe</h3>
+            </div>
+            </a> -->
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="../images/menu-2.png" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+                <img src="../images/menu-2.png"  class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Momo</h3>
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+                <img src="../images/menu-2.png"  class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Pizza</h3>
+                <h3 class="float-text text-white">coffe</h3>
+            </div>
+            </a>
+            <!-- <a href="#">
+            <div class="box-3 float-container">
+                <img src="../images/.menu-2.png" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">coffe</h3>
+            </div>
+            </a> -->
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="../images/menu-2.png" alt="Burger" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+                <img src="../images/menu-2.png"  class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Burger</h3>
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+                <img src="../images/menu-2.png" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Momo</h3>
-            </div>
-            </a>
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Pizza</h3>
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+                <img src="../images/menu-2.png"  class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Burger</h3>
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+                <img src="../images/menu-2.png" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Momo</h3>
-            </div>
-            </a>
-
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Pizza</h3>
-            </div>
-            </a>
-
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Burger</h3>
-            </div>
-            </a>
-
-            <a href="#">
-            <div class="box-3 float-container">
-                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Momo</h3>
+                <h3 class="float-text text-white">coffe</h3>
             </div>
             </a>
 

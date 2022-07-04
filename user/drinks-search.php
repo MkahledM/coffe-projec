@@ -1,3 +1,6 @@
+
+
+<?php //include('admin/partials/register_check.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <title>Restaurant Website</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -16,20 +19,23 @@
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                    <img src="images/logo-coffe.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
 
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="homepage.php">Home</a>
                     </li>
                     <li>
-                        <a href="categories.html">Categories</a>
+                        <a href="categories.php">Categories</a>
                     </li>
                     <li>
-                        <a href="Drinks.html">Drinks</a>
+                        <a href="Drinks.php">Drinks</a>
+                    </li>
+                    <li>
+                        <a href="order.php">orders</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -46,7 +52,7 @@
     <section class="food-search text-center">
         <div class="container">
             
-            <h2>Foods on <a href="#" class="text-white">"Category"</a></h2>
+            <h2>Foods on Your Search <a href="#" class="text-white">"Momo"</a></h2>
 
         </div>
     </section>
