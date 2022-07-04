@@ -40,8 +40,6 @@
     <div class="wrapper">
         <h1>Update Drink</h1>
         <br><br>
-     
-
         <form action="" method="POST" enctype="multipart/form-data">
        <table class="tbl-30">
               <tr>
@@ -168,11 +166,11 @@
 
         </table>
         </form>
-        <!-- //save update data -->
-        <?php
+          <!-- //save update data -->
+          <?php
         //get all value from form
-        
-         if(isset($_POST['submit'])){
+       
+        if(isset($_POST['submit'])){
 
           $id = $_POST['id'];
           $title = $_POST['title'];
@@ -184,17 +182,16 @@
           $active = $_POST['active'];
 
           //update image if is selected 
-          if(isset($_FILES['image']['name']))
-          {
+          if($_FILES['image']['name']){
             //get all image details
 
-            $image_name = $_FILES['image']['name'];
+            $image_name = $_FILES['image']['nmae'];
             if($image_name != "")
             {
                 //upload new image 
 
-           $ext = end(explode('.',$image_name));
-            $image_name = "drink-category-".rand(000,999).'.'.$ext;
+                $ext = end(explode('.',$image_name));
+            $image_name = "drink_name_".rand(000,999).'.'.$ext;
 
             $source_path = $_FILES['image']['tmp_name'];
 
@@ -209,12 +206,10 @@
                 die();
 
             }
-            if($current_image != "")
-            {
+            if($current_image != ""){
                 $remove_path = "../images/drinks/".$current_image;
                 $remove = unlink($remove_path);
-                if($remove==false)
-                {
+                if($remove==false){
                     $_SESSION['failed_remove'] = "<dive class'error'>failed to remove current image</dive>";
                     //redirect
                     header('location:'.SITEURL.'admin/manage-drink.php');
@@ -223,10 +218,9 @@
 
             }
            
-          }
-        }
-            else
-            {
+
+            }
+            else{
 
                 $image_name = $current_image; 
             }
@@ -236,6 +230,7 @@
             $image_name = $current_image;
           }
 
+          //updating  database 
           $sql3 = "UPDATE tbl_drink  SET 
           title = '$title',
           description = '$description',
@@ -248,24 +243,25 @@
           $res3 = mysqli_query($conn,$sql3);
 
           if($res3==true){
-            //category update
+       
             $_SESSION['update'] = "<div class='success'>Drink update successfuly</div>";
             header('location:'.SITEURL.'admin/manage-drink.php');
           }
           else {
-            $_SESSION['update'] = "<div class='error'>drink update failed</div>";
+            $_SESSION['update'] = "<div class='error'>Drink update failed</div>";
             header('location:'.SITEURL.'admin/manage-drink.php');
           }
 
-         
+         }
+
+
+
 
 ?>
 
 
        
        
-
-
 </div>
 </div>
 
